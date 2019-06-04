@@ -1,6 +1,6 @@
 body{
     margin: 5% auto;
-    width: 60%;
+    width: 70%;
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-family: 'oxygen', sans-serif;
@@ -106,7 +106,7 @@ blockquote {
     }
 
     .columns{
-        display: inline-flex;
+        display: block;
     }
 }
 .p-footer{
