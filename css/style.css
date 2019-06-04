@@ -128,17 +128,21 @@ blockquote {
 }
 .kotak{
     background-color: lightgrey;
-    color: #fff;
+    color: #343a40;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+body.darkmode .kotak a{
+    color: #343a40;
+}
 .episode{
     background-color: rgb(227, 227, 227);
-    color: #fff;
+    color: #343a40;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.episode1 {
-    text-align: right;
+body.darkmode .episode a{
+    color: #343a40;
 }
+
