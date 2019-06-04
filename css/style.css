@@ -129,4 +129,16 @@ blockquote {
 .kotak{
     background-color: lightgrey;
     color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.episode{
+    background-color: rgb(227, 227, 227);
+    color: #fff;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.episode1 {
+    text-align: right;
 }
