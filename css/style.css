@@ -108,6 +108,9 @@ blockquote {
     .columns{
         display: block;
     }
+    .list{
+        display: inline-flex;
+    }
 }
 .p-footer{
     text-align: center;
