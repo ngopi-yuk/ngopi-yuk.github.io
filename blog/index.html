@@ -20,12 +20,6 @@
 </head>
 <body>
     <header>
-      <nav> <a target="_blank" href='https://www.instagram.com/ng0piyuk/?hl=id'> @ngopiyuk!</a> </nav>
-        <div id="theme">
-            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚<span> Dark</span></div>
-            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝 Light </span></div>
-        </div>
-
         <script>
             
             if(localStorage.getItem('preferredTheme') == 'dark') {
@@ -52,26 +46,20 @@
     </header>
 
     <main>
-        <div class="landing">
-            <div class="">
-                
-            </div>
-        </div>
+
        
         <div class="columns">
             <div id="article">
-              <img style="height: 100px;" src="../images/kopi.png">
+              <img style="height: 100px;" src="images/kopi.png">
+              <!--h3 class="is-headline" >@ngopiyuk</h3-->
               <br>
                   <a href="https://ngopiyuk.netlify.com/">Home</a><br>
                   <a href="https://ngopiyuk.netlify.com/podcast/">Podcast 🎙</a><br>
                   <a href="https://ngopiyuk.netlify.com/blog/">Blog ✍</a><br>
-                  <form class="" action="/blog/filter/search" method="get">
-                             <div class="input">
-                                <input type="text" name="q" placeholder="cari artikel">
-                            </div>
-                            <input style="background-color: grey; color: white;" type="submit" name="" value="Cari">
-                        </form>
-               
+                  <div id="theme">
+                    <div onclick="setDarkMode(true)" id="darkBtn" class=""> <span href="">🌚</span></div>
+                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝</span></div>
+        </div>
                 
               </div>&emsp;<hr>&emsp;
             <div id="article">
