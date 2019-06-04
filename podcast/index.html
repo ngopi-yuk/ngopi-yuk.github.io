@@ -1,0 +1,139 @@
+
+<!-- =====================================================================================================
+============================== Halooo !!! ngintip aja bro ================================================
+==========================================================================================================
+!-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NgopiYuk | @ngopiyuk </title>
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+   
+</head>
+<body>
+    <header>
+      <nav> <a target="_blank" href='https://id.wikipedia.org/wiki/P'> @ngopiyuk!</a> </nav>
+        <div id="theme">
+            <div onclick="setDarkMode(true)" id="darkBtn" class=""> 🌚<span> Dark</span></div>
+            <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝 Light </span></div>
+        </div>
+
+        <script>
+            
+            if(localStorage.getItem('preferredTheme') == 'dark') {
+                setDarkMode(true)
+            }
+
+            function setDarkMode(isDark) {
+                var darkBtn = document.getElementById('darkBtn')
+                var lightBtn = document.getElementById('lightBtn')
+
+                if(isDark) {
+                    lightBtn.style.display = "block"
+                    darkBtn.style.display = "none"
+                    localStorage.setItem('preferredTheme', 'dark');
+                } else {
+                    lightBtn.style.display = "none"
+                    darkBtn.style.display = "block"
+                    localStorage.removeItem('preferredTheme');
+                }
+
+                document.body.classList.toggle("darkmode");
+            }
+        </script>
+    </header>
+
+    <main>
+        <div class="landing">
+            <div class="">
+
+            </div>
+        </div>
+
+       
+        <div class="columns">
+            <div id="article">
+              <img style="height: 100px;" src="../images/kopi.png">
+              <!--h3 class="is-headline" >@ngopiyuk</h3-->
+              <br>
+                  <a href="../index.html">Home</a><br>
+                  <a href="index.html">Podcast 🎙</a><br>
+                  <a href="../blog/index.html">Blog ✍</a><br>
+                  <form class="" action="/blog/filter/search" method="get">
+                             <div class="input">
+                                <input type="text" name="q" placeholder="cari artikel">
+                            </div>
+                            <input style="background-color: grey; color: white;" type="submit" name="" value="Cari">
+                        </form>
+               
+                
+              </div>&emsp;<hr>&emsp;
+
+        <div class="">
+            <center><h2 class="is-headline"> Selamat Mendengarkan! </h2></center>
+            <br>
+            <i>Opening yang bagus buat saat ini :'(</i>
+
+            	<iframe src="https://anchor.fm/fajar-a-nugroho/embed/episodes/Kiss-the-Rain-e48088/a-agiovf" height="102px" width="366px" frameborder="0" scrolling="no"></iframe><br>
+            	<a href="">Catatan</a><br>
+
+            <h2 class="is-headline"> Episode </h2>
+            <br>
+            	<a href=""><h3>Episode 6 - </h3></a>
+            	<a href=""><h3>Episode 5 - </h3></a>
+            	<a href=""><h3>Episode 4 - </h3></a>
+            	<a href=""><h3>Episode 3 - </h3></a>
+            	<a href=""><h3>Episode 2 - </h3></a>
+            	<a href=""><h3>Episode 1 - Perkenalan</h3></a>   
+        </div>
+
+            
+        </div>
+
+        <br>
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ngopiyuk.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//ngopiyuk.disqus.com/count.js" async></script>
+ 
+    <!--footer-->
+         <div class="p-footer">
+                            <!--p>
+                                <a href="https://www.instagram.com/tehataukopi/"> <img src="images/ig.png" alt="logo instagram" width="33"> </a>
+                                <a href="https://www.facebook.com/tehataukopi/"> <img src="images/fb.png" alt="logo facebook" width="25"> </a>
+                                <a href="https://www.twitter.com/tehataukopi/"> <img src="images/twitt.png" alt="logo twitter" width="25"> </a>
+                             </p-->
+                
+                             <p>NgopiYuk! - Belajar Filosofi Kopi ☕ // Dikelola <a href="https://fajarbaiz.com" class="is-link" target="_blank">@fajar.agungn</a> </p>
+                        </div>
+                </div>
+          <!--footer-->
+
+</body>
+</html>
