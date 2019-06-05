@@ -109,13 +109,13 @@ blockquote {
     }
 
     .columns{
-        display: block;
+        display: flex;
     }
     .list{
         position: relative;
-        display: inline-flex;
         left: 100px;
         top: -25px;
+        display: inline-flex;
     }
     .list a{
         text-decoration: none;
@@ -132,6 +132,9 @@ blockquote {
     .gkiri{
         margin-bottom: -40px;
         margin-top: -25px;
+        position: relative;
+        top: 80px;
+        right: 250px;
     }
     .darkm{
         position: relative;
@@ -147,6 +150,15 @@ blockquote {
     .twitter-timeline{
         display: none;
     }
+
+    .tubuh{
+        position: relative;
+        top: 40px;
+        right: 250px;
+        margin-right: -200px;
+        
+    }
+
 }
 .list{
         position: relative;
