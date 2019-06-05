@@ -19,6 +19,12 @@
    
 </head>
 <body>
+  <div class="darkm" id="theme">
+                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><font style="color: #fff; background-color: #343a40; border-radius: 10px;" ><span>Dark Mode</span></div></font>
+                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <font style="color: #343a40; background-color: #fff ; border-radius: 10px;" ><span>Light Mode</span></div></font>
+                </div>
+
+
     <header>
         <script>
             
@@ -43,35 +49,35 @@
                 document.body.classList.toggle("darkmode");
             }
         </script>
-    </header>
 
+    </header>
+                
     <main>
 
        
         <div class="columns">
             <div id="article">
-              <img style="height: 75px;" src="images/kopi.png">
+              <div class="logo" ><img class="" style="height: 75px;" src="images/kopi.png"></div>
               <!--h3 class="is-headline" >@ngopiyuk</h3-->
             <div class="list" >
                   <a href="https://ngopiyuk.netlify.com/">Home</a>&emsp;<br>
                   <a href="https://ngopiyuk.netlify.com/podcast/">Podcast🎙</a>&emsp;<br>
                   <a href="https://ngopiyuk.netlify.com/blog/">Blog ✍</a>&emsp;
-                  <div id="theme">
-                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><span>🌚</span></div>
-                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝</span></div>
-                </div>
-            </div>
-                    <form class="" action="/blog/filter/search" method="get">
+                   <form class="search" action="/blog/filter/search" method="get">
                              <div class="input">
                                 <input type="text" name="q" placeholder="cari artikel">
                                 <input type="submit" name="" value="Cari">
                             </div>
                             
-                        </form>
+                        </form> 
+
+            </div>
+                    
+                           
                 
            
 
-              </div><hr>&emsp;
+              </div>&emsp;<hr class="gkiri" >&emsp;
               <div class="">
                 <h1 class="is-headline" > Selamat Datang! </h1>
                 <br>
@@ -84,14 +90,15 @@ Filosofi Kopi 2: Ben & Jodi adalah film Indonesia tahun 2017 yang disutradarai o
 <br>
 
 
+
              
           </div>
           
         </div>
-
-        <br>
+               <br>
  
-    <!--footer-->
+    
+        <!--footer-->
          <div class="p-footer">
                             <!--p>
                                 <a href="https://www.instagram.com/tehataukopi/"> <img src="images/ig.png" alt="logo instagram" width="33"> </a>
@@ -103,5 +110,7 @@ Filosofi Kopi 2: Ben & Jodi adalah film Indonesia tahun 2017 yang disutradarai o
                         </div>
                 </div>
           <!--footer-->
+ 
 </body>
+
 </html>
