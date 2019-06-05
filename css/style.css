@@ -41,6 +41,9 @@ body.darkmode {
 body.darkmode a{
     color: rgb(227, 227, 227);
 }
+body.darkmode a:hover{
+    color: black;
+}
 
 .is-hidden{
     display: none;
@@ -109,15 +112,60 @@ blockquote {
         display: block;
     }
     .list{
+        position: relative;
         display: inline-flex;
+        left: 100px;
+        bottom: 51px;
+    }
+    .list a{
+        text-decoration: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .logo{
+        position: relative;
+        top: 5px;
+    }
+    .gkiri{
+        margin-bottom: -40px;
+        margin-top: -50px;
+    }
+    .darkm{
+        position: relative;
+        text-align: right;
+        margin-bottom: -10px;
+        
     }
 }
+a:hover{
+    color: black;
+}
+.list a{
+        text-decoration: none;
+        font-weight: bold;
+    }
+.list a:hover{
+    color: black;
+}
+
 .p-footer{
     text-align: center;
     color: grey;
     font-size: 15px;
 }
+.search{
+    position: relative;
+    text-align: right;
 
+}
+.darkm{
+    position: relative;
+    top: 0px;
+
+}
 .is-headline {
     font-size: 2rem;
     display: inline-block;
@@ -126,6 +174,7 @@ blockquote {
     color: white;
     margin-bottom: 5px;
 }
+
 .kotak{
     background-color: lightgrey;
     color: #343a40;
