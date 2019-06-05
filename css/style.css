@@ -107,6 +107,9 @@ blockquote {
         display: block;
         font-size: 0.9rem;
     }
+    .columns{
+        display: flex;
+    }
 
     .list{
         position: relative;
@@ -114,7 +117,7 @@ blockquote {
         top: -25px;
         display: inline-flex;
     }
-    
+
     .list a{
         text-decoration: none;
     }
@@ -200,7 +203,7 @@ a:hover{
     font-size: 2rem;
     display: inline-block;
     padding: 10px;
-    background: darkcyan;
+    background: #ff5e00;;
     color: white;
     margin-bottom: 5px;
 }
