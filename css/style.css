@@ -42,7 +42,7 @@ body.darkmode a{
     color: rgb(227, 227, 227);
 }
 body.darkmode a:hover{
-    color: black;
+    color: #ff5e00;
 }
 
 .is-hidden{
