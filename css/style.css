@@ -115,7 +115,7 @@ blockquote {
         position: relative;
         display: inline-flex;
         left: 100px;
-        top: -40px;
+        top: -25px;
     }
     .list a{
         text-decoration: none;
@@ -131,13 +131,13 @@ blockquote {
     }
     .gkiri{
         margin-bottom: -40px;
-        margin-top: -40px;
+        margin-top: -25px;
     }
     .darkm{
         position: relative;
         text-align: left;
         margin-top: -40px;
-        top: 20px;
+        top: 35px;
         bottom: 30px;       
     }
     .linkepisode a{
