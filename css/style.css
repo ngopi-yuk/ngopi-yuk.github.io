@@ -143,6 +143,10 @@ blockquote {
     .linkepisode a{
         left: 200px;
     }
+
+    .twitter-timeline{
+        display: none;
+    }
 }
 .list{
         position: relative;
