@@ -19,6 +19,12 @@
    
 </head>
 <body>
+  <div class="darkm" id="theme">
+                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><font style="color: #fff; background-color: #343a40; border-radius: 10px;" ><span>Dark Mode</span></div></font>
+                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <font style="color: #343a40; background-color: #fff ; border-radius: 10px;" ><span>Light Mode</span></div></font>
+                </div>
+
+               
     <header>
         <script>
             
@@ -43,41 +49,38 @@
                 document.body.classList.toggle("darkmode");
             }
         </script>
-    </header>
 
+    </header>
+                
     <main>
 
        
         <div class="columns">
             <div id="article">
-              <img style="height: 75px;" src="../images/kopi.png">
+              <div class="logo" ><img class="" style="height: 75px;" src="../images/kopi.png"></div>
               <!--h3 class="is-headline" >@ngopiyuk</h3-->
             <div class="list" >
                   <a href="https://ngopiyuk.netlify.com/">Home</a>&emsp;<br>
                   <a href="https://ngopiyuk.netlify.com/podcast/">Podcast🎙</a>&emsp;<br>
                   <a href="https://ngopiyuk.netlify.com/blog/">Blog ✍</a>&emsp;
-                  <div id="theme">
-                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><span>🌚</span></div>
-                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <span>🌝</span></div>
-                </div>
-            </div>
-                    <form class="" action="/blog/filter/search" method="get">
+                   <form class="search" action="/blog/filter/search" method="get">
                              <div class="input">
                                 <input type="text" name="q" placeholder="cari artikel">
                                 <input type="submit" name="" value="Cari">
                             </div>
                             
-                        </form>
-           
+                        </form> 
 
-              </div><hr>&emsp;
+            </div>
+
+              </div>&emsp;<hr>&emsp;
               <div class="">
                 <h1 class="is-headline" > Selamat Mendengarkan! </h1>
                 <br>
             <h2>Kumpulan podcast yang akan menemani hari anda seputar filosofi kopi yang belum pernah anda ketahui.</h2>
             
             <div class="kotak">
-                <center><span>Also Available at: <img height="25px" src="../images/anchor.png"><a href=""> Anchor.Fm </a></span></center>
+                <center><span>Also Available at: <img height="25px" src="../../images/anchor.png"><a href=""> Anchor.Fm </a></span></center>
 <br>
                     <center><iframe src="https://anchor.fm/fajar-a-nugroho/embed/episodes/Episode-1---Makna-dari-Secangkir-Kopi-e486kp" height="102px" width="322px" frameborder="0" scrolling="no"></iframe></center>
             </div>
