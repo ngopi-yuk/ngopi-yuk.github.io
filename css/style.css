@@ -115,7 +115,7 @@ blockquote {
         position: relative;
         display: inline-flex;
         left: 100px;
-        bottom: 51px;
+        top: -40px;
     }
     .list a{
         text-decoration: none;
@@ -131,14 +131,23 @@ blockquote {
     }
     .gkiri{
         margin-bottom: -40px;
-        margin-top: -50px;
+        margin-top: -40px;
     }
     .darkm{
         position: relative;
-        text-align: right;
-        margin-bottom: -10px;
-        
+        text-align: left;
+        margin-top: -40px;
+        top: 20px;
+        bottom: 30px;       
     }
+    .linkepisode a{
+        left: 365px;
+        top: -28px;
+    }
+}
+.list{
+        position: relative;
+        margin-top: 13px;
 }
 a:hover{
     color: black;
@@ -149,6 +158,7 @@ a:hover{
     }
 .list a:hover{
     color: black;
+
 }
 
 .p-footer{
@@ -159,15 +169,26 @@ a:hover{
 
 .darkm{
     position: relative;
-    top: 0px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+
 
 }
 .is-headline {
     font-size: 2rem;
     display: inline-block;
     padding: 10px;
-    background: #ff5e00;
+    background: darkcyan;
     color: white;
+    margin-bottom: 5px;
+}
+body.darkmode .is-headline{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    color: black;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -191,3 +212,10 @@ body.darkmode .episode a{
     color: #343a40;
 }
 
+
+.linkepisode a{
+    text-align: right;
+    position: relative;
+    right: -695px;
+    bottom: 25px;
+}
