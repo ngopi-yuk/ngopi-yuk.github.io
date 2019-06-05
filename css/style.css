@@ -108,15 +108,13 @@ blockquote {
         font-size: 0.9rem;
     }
 
-    .columns{
-        display: flex;
-    }
     .list{
         position: relative;
         left: 100px;
         top: -25px;
         display: inline-flex;
     }
+    
     .list a{
         text-decoration: none;
     }
@@ -129,6 +127,7 @@ blockquote {
         position: relative;
         top: 5px;
     }
+
     .gkiri{
         margin-bottom: -40px;
         margin-top: -25px;
@@ -136,6 +135,7 @@ blockquote {
         top: 80px;
         right: 250px;
     }
+
     .darkm{
         position: relative;
         text-align: left;
@@ -143,6 +143,7 @@ blockquote {
         top: 35px;
         bottom: 30px;       
     }
+
     .linkepisode a{
         left: 200px;
     }
@@ -158,6 +159,12 @@ blockquote {
         margin-right: -200px;
         
     }
+    .p-footer{
+        position: relative;
+        margin-bottom: 15px;
+        top: 90px;
+    }
+
 
 }
 .list{
