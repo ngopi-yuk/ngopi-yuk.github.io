@@ -34,7 +34,8 @@ body.darkmode .khusus a{
 }
 
 body.darkmode {
-    background: rgb(57, 57, 57);
+    background-color: #15202B;
+    /*background: rgb(57, 57, 57);*/
     color: rgb(227, 227, 227);
 }
 
@@ -42,7 +43,10 @@ body.darkmode a{
     color: rgb(227, 227, 227);
 }
 body.darkmode a:hover{
-    color: #ff5e00;
+    color: #1DA1F2;
+}
+body.darkmode a:active{
+    color: #1DA1F2;
 }
 
 .is-hidden{
@@ -211,8 +215,8 @@ body.darkmode .is-headline{
     font-size: 2rem;
     display: inline-block;
     padding: 10px;
-    background: #fff;
-    color: black;
+    background: #1DA1F2;
+    color: #fff;
     font-weight: bold;
     margin-bottom: 5px;
 }
