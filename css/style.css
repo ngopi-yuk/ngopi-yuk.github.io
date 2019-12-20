@@ -17,6 +17,9 @@ body{
     margin:0 auto;
     padding:20px 5% 60px;
 }
+p{
+    font-size: 0.9em;
+}
 
 .line{
     border-bottom:2px solid #fcfcfc;
@@ -116,7 +119,7 @@ blockquote {
         margin-top: -25px;
         position: relative;
         top: 80px;
-        right: 250px;
+        right: 260px;
     }
 
     .darkm{
@@ -284,7 +287,7 @@ html a{
     outline:none
 }
 .title{
-    font-size:1.4rem;
+    font-size:1.5rem;
     font-weight:bold
 }
 .line{
@@ -318,9 +321,9 @@ html a{
     text-decoration:underline
 }
 footer{
-    display:flex;
     justify-content:space-between;
     align-items:center;
+    text-align: center;
     position:fixed;
     bottom:0px;
     left:0px;
