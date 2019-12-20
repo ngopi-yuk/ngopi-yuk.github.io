@@ -30,18 +30,9 @@
                   <a href="https://ngopiyuk.netlify.com/">Home</a>&ensp;<br>
                   <a href="https://ngopiyuk.netlify.com/podcast/">Podcast</a>🎙&ensp;<br>
                   <a href="https://ngopiyuk.netlify.com/note/">Note</a>✍&ensp;<br>
-                   <form class="search" action="/blog/filter/search" method="get">
-                             <div class="input">
-                                <input type="text" name="q" placeholder="cari artikel">
-                                <input type="submit" name="" value="Cari">
-                            </div>
-                            
-                        </form> 
+                   <input type=text v-model=search_q placeholder="Search.." class=search-side>
                         <br>
 
-                        <div class="twitter-timeline" >
-                          <a class="twitter-timeline" data-width="300" data-height="260" href="https://twitter.com/fajar_agungn?ref_src=twsrc%5Etfw">Tweets by fajaragungn25</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
 
             </div>
                     
@@ -51,32 +42,43 @@
 
               </div>&emsp;<hr class="gkiri" >&emsp;
               <div class="tubuh">
-                <h1 class="is-headline" > Selamat Mendengarkan! </h1>
-                <br>
-            <h2>Kumpulan podcast yang akan menemani hari anda seputar filosofi kopi yang belum pernah anda ketahui.</h2>
-            
-            <div class="kotak">
-                <center><span>Also Available at: <img height="25px" src="../images/anchor.png"><a href=""> Anchor.Fm </a></span></center>
-<br>
-                    <center><iframe src="https://anchor.fm/fajar-a-nugroho/embed/episodes/Episode-1---Makna-dari-Secangkir-Kopi-e486kp" height="102px" width="322px" frameborder="0" scrolling="no"></iframe></center>
+                <h1 class="title" > Selamat Mendengarkan!</h1>
+                <div class="line" ></div>
+      <main id=main>
+        <section id=player>
+
+          <iframe height=100 width=100% frameborder=0 scrolling=no></iframe>
+
+            <div v-else>
+              <iframe src=https://anchor.fm/fajar-a-nugroho/embed/episodes/Episode-1---Makna-dari-Secangkir-Kopi-e486kp height=100px width=95% frameborder=0 scrolling=no></iframe>
+
+              <p>Memfilosofikan kopi bisa dikatakan memberi pandangan hidup dan memaknai kehidupan dari secangkir kopi. Tidak banyak orang yang dapat memfilosofikan kopi berdasarkan jenisnya termasuk saya. Setiap jenis kopi punya filosofinya masing-masing. Filosofi tersebut akan timbul dari peranmu yang sangat paham akan karakter suatu jenis kopi sehingga ia dapat memfilosofikannya dalam kehidupan.</p>
+              <a href=https://tehataukopi.club/mengenal-kognitif-bias/ class=btn>Catatan</a>
             </div>
+        </section>
+        <section>
+          <input type=text v-model=search_q placeholder="Cari judul.." class=search>
+            <div class=title>Daftar Episode</div>
+              <div class=line></div>
 
-        <div class="episode" >
-            <h1 class="is-headline" > Episode : </h1><br>
+                <a href="#" class=boxes>
+                  <p>Eps 02 : </p>
+                  <div class=arrow-right></div>
+                </a>
 
-                <!--a href=""><h2>Episode 5 - </h2></a>
-                <a href=""><h2>Episode 4 - </h2></a>
-                <a href=""><h2>Episode 3 - </h2></a>
-                <a href=""><h2>Episode 2 - </h2></a-->
-                    <br>
+                <a href="https://ngopiyuk.netlify.com/podcast/episode/1/" class=boxes>
+                  <p>Eps 01 : Makna Secangkir Kopi</p>
+                  <div class=arrow-right></div>
+                </a>
 
-                    Episode 1 - Makna dari Secangkir Kopi&ensp;<a href="https://ngopiyuk.netlify.com/podcast/episode/1/">Listen</a>
-        </div>
-
-        <br>
-
-Perjalanan kopi hingga akhirnya terseduh dalam satu cangkir tidaklah melalui proses yang instan. Dari biji kopi yang dihaluskan lalu dibuat dalam bentuk bubuk, hingga kemudian menjadi minuman yang nikmat membutuhkan proses yang butuh kesabaran. Bahkan beda tangan, akan menghasilkan beda cita rasa.
-<br><br><hr>
+                </section>
+                </main>
+                <script src=https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js>
+                  
+                </script>
+                <script>(async()=>{const res=await fetch('/index.json');const itemsRaw=await res.json();const items=itemsRaw.data
+new Vue({delimiters:['${','}'],el:'#main',data:{items:items,currentItem:"",search_q:"",loading:true,},methods:{play:function(item){this.currentItem=item}},computed:{filteredItems:function(){let itemWithFilter=this.items.filter((item)=>{return item.title.toLowerCase().includes(this.search_q.toLowerCase())})
+return itemWithFilter}}})})();</script>
 
 <div id="disqus_thread"></div>
 <script>
@@ -106,19 +108,11 @@ s.setAttribute('data-timestamp', +new Date());
         </div>
 
         <br>
-    <!--footer-->
-         <div class="p-footer">
-                            <!--p>
-                                <a href="https://www.instagram.com/tehataukopi/"> <img src="images/ig.png" alt="logo instagram" width="33"> </a>
-                                <a href="https://www.facebook.com/tehataukopi/"> <img src="images/fb.png" alt="logo facebook" width="25"> </a>
-                                <a href="https://www.twitter.com/tehataukopi/"> <img src="images/twitt.png" alt="logo twitter" width="25"> </a>
-                             </p-->
-                
-                             <p>NgopiYuk! - Belajar Filosofi Kopi ☕ // Dikelola <a href="https://fajarbaiz.com" class="is-link" target="_blank">@fajar.agungn</a> </p>
-                        </div>
-                </div>
-          <!--footer-->
+   
 
           <script id="dsq-count-scr" src="//ngopiyuk.disqus.com/count.js" async></script>
+          <footer>
+            Oleh @fajar.agungn
+        </footer>
 </body>
 </html>
