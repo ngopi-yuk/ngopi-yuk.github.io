@@ -15,11 +15,17 @@
     <link rel="shortcut icon" href="../favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel=stylesheet>
     <!-- Latest compiled and minified CSS -->
    
 </head>
 <body>
-
+  <header>
+    <div>
+      <h1>HelloWorld!</h1>
+      <h2></h2>
+    </div>
+      </header>
        
         <div class="columns">
             <div id="article">
@@ -27,21 +33,14 @@
               <!--div class="logo" ><img class="" style="height: 75px;" src="images/kopi.png"></div-->
               <!--h3 class="is-headline" >@ngopiyuk</h3-->
             <div class="list">
-                  <a href="https://ngopiyuk.netlify.com/">Home</a>&ensp;<br>
+                  <a class="act" href="https://ngopiyuk.netlify.com/">Home</a>&ensp;<br>
                   <a href="https://ngopiyuk.netlify.com/podcast/">Podcast</a>🎙&ensp;<br>
                   <a href="https://ngopiyuk.netlify.com/note/">Note</a>✍&ensp;<br>
-                   <form class="search" action="/blog/filter/search" method="get">
-                             <div class="input">
-                                <input type="text" name="q" placeholder="cari artikel">
-                                <input type="submit" name="" value="Cari">
-                            </div>
-                            
-                        </form> 
+               
+                  <input type=text v-model=search_q placeholder="Cari judul.." width="600px" class=search-side>
                         <br>
 
-                        <div class="twitter-timeline" >
-                          <a class="twitter-timeline" data-width="300" data-height="260" href="https://twitter.com/fajar_agungn?ref_src=twsrc%5Etfw">Tweets by fajaragungn25</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
+                        
 
             </div>
                     
@@ -51,41 +50,25 @@
 
               </div>&emsp;<hr class="gkiri" >&emsp;
               <div class="tubuh">
-              <h1 class="is-headline">Note</h1>
-                <ul>
-                    <li>
-                         <a href="https://fajarbaiz.com/article/tahunpolitik/"> *ANTARA RIYA' DAN DENGKI </a>
-                         <span style="color:grey;"> -  Sun May 05, 2019</span><br>
-                         Tanpa dengki tidak mungkin ada riya', karena riya hanyalah prasangka kita yg dengki/iri terhadap orang yg kita anggap riya'&emsp;<a href=""><i>Selengkapnya</i></a>
-                    </li><br>
-                    <li>
-                         <a href="https://fajarbaiz.com/article/tahunpolitik/"> *ANTARA RIYA' DAN DENGKI </a>
-                         <span style="color:grey;"> -  Sun May 05, 2019</span><br>
-                         Tanpa dengki tidak mungkin ada riya', karena riya hanyalah prasangka kita yg dengki/iri terhadap orang yg kita anggap riya'&emsp;<a href=""><i>Selengkapnya</i></a>
-                    </li><br>
-                    <li>
-                         <a href="https://fajarbaiz.com/article/tahunpolitik/"> *ANTARA RIYA' DAN DENGKI </a>
-                         <span style="color:grey;"> -  Sun May 05, 2019</span><br>
-                         Tanpa dengki tidak mungkin ada riya', karena riya hanyalah prasangka kita yg dengki/iri terhadap orang yg kita anggap riya'&emsp;<a href=""><i>Selengkapnya</i></a>
-                    </li><br>
-                    
-                </ul>
-                <hr>
-              </div>
+                <h1 class="title" > Note / Catatan </h1>
+                <div class=line></div>
+            <h4>
+              Salah dalam mengambil keputusan sulit untuk kita hindari, tapi kita bisa meminimalisirnya. <br>Yuk kenalan dengan masalah kita semua yaitu cognitive bias (kognitif bias), apa saja penyebabnya dan bagaimana menguranginya
+            </h4>
 
+
+
+          </div>
+          
         </div>
+               <br><br>
 
-    <!--footer-->
-         <div class="p-footer">
-                            <!--p>
-                                <a href="https://www.instagram.com/tehataukopi/"> <img src="images/ig.png" alt="logo instagram" width="33"> </a>
-                                <a href="https://www.facebook.com/tehataukopi/"> <img src="images/fb.png" alt="logo facebook" width="25"> </a>
-                                <a href="https://www.twitter.com/tehataukopi/"> <img src="images/twitt.png" alt="logo twitter" width="25"> </a>
-                             </p-->
-                
-                             <p>NgopiYuk! - Belajar Filosofi Kopi ☕ // Dikelola <a href="https://fajarbaiz.com" class="is-link" target="_blank">@fajar.agungn</a> </p>
-                        </div>
-                </div>
-          <!--footer-->
+
+
+ <footer>
+<footer>
+            Oleh @fajar.agungn
+        </footer>
 </body>
+
 </html>
