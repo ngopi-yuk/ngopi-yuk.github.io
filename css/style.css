@@ -9,6 +9,7 @@ html{
 body{
     background:#181E25;
     width: 70%;
+    min-height:100%;
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-family: 'lato', sans-serif;
@@ -17,7 +18,16 @@ body{
     padding:20px 5% 60px;
 }
 
-
+.line{
+    border-bottom:2px solid #fcfcfc;
+    width:100px;
+    display:block;
+    margin-top:10px
+}
+.title{
+    font-size:1.4rem;
+    font-weight:bold
+}
 
 .is-hidden{
     display: none;
@@ -92,7 +102,7 @@ blockquote {
         text-decoration: none;
     }
 
-    .search{
+    .search-side{
         display: none;
     }
 
@@ -145,9 +155,7 @@ blockquote {
         margin-top: 13px;
 }
 
-a:hover{
-    color: #1DA1F2;
-}
+
 
 a:active{
     color: #1DA1F2;
@@ -219,5 +227,115 @@ body.darkmode .episode a{
     color: #343a40;
 }
 
+
+
+
+
+
+html a{
+    color:#fcfcfc;
+    text-decoration:none
+}
+
+
+
+.link{
+    text-decoration:underline
+}
+#player{
+    margin-top:-70px;
+    margin-bottom:40px;
+    text-align:center
+}
+#player iframe{
+    margin-bottom:10px
+}
+.btn{
+    background:#1DA1F2;
+    border-radius:10px;
+    padding:10px;
+    width:50%;
+    margin:0 auto;
+    display:block;
+    text-align:center
+}
+.search-side{
+    background:#313942;
+    box-sizing:border-box;
+    color:#fcfcfc;
+    border:0px;
+    padding:3px;
+    width:100px;
+    border-radius:5px;
+    font-size:1rem;
+    margin-bottom:20px;
+    outline:none
+}
+.search{
+    background:#313942;
+    box-sizing:border-box;
+    color:#fcfcfc;
+    border:0px;
+    padding:10px;
+    width:100%;
+    border-radius:10px;
+    font-size:1rem;
+    margin-bottom:20px;
+    outline:none
+}
+.title{
+    font-size:1.4rem;
+    font-weight:bold
+}
+.line{
+    border-bottom:2px solid #fcfcfc;
+    width:100px;
+    display:block;
+    margin-top:10px
+}
+.boxes{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 10px
+}
+.boxes:hover{
+    background:#313942
+}
+.boxes_active{
+    color:#A168FB
+}
+.boxes_active .arrow-right{
+    border-left-color:#A168FB
+}
+.arrow-right{
+    width:0;height:0;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:10px solid #fcfcfc
+}
+#content a{
+    text-decoration:underline
+}
+footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    transform:translate(-50%);
+    margin-left:50%;
+    padding:8px 5%;
+    background:#2A343E;
+    width:70%;
+}
+@media only screen and (max-width: 600px){
+    body{
+        max-width:90%;
+        margin:0 auto;
+        }
+}
+/*# sourceMappingURL=main.css.map */
 
 
