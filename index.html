@@ -15,42 +15,17 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel=stylesheet>
     <!-- Latest compiled and minified CSS -->
    
 </head>
 <body>
-  <div class="darkm" id="theme">
-                    <div onclick="setDarkMode(true)" id="darkBtn" class=""><a href=""><img class="logo" style="height: 75px;" src="images/kopi.png"></a></div>
-                    <div onclick="setDarkMode(false)" id="lightBtn" class="is-hidden"> <img class="logo" style="height: 75px;" src="images/kopi2.png"></div>
-                </div>
-
-
-    <header>
-        <script>
-            
-            if(localStorage.getItem('preferredTheme') == 'dark') {
-                setDarkMode(true)
-            }
-
-            function setDarkMode(isDark) {
-                var darkBtn = document.getElementById('darkBtn')
-                var lightBtn = document.getElementById('lightBtn')
-
-                if(isDark) {
-                    lightBtn.style.display = "block"
-                    darkBtn.style.display = "none"
-                    localStorage.setItem('preferredTheme', 'dark');
-                } else {
-                    lightBtn.style.display = "none"
-                    darkBtn.style.display = "block"
-                    localStorage.removeItem('preferredTheme');
-                }
-
-                document.body.classList.toggle("darkmode");
-            }
-        </script>
-
-    </header>
+  <header>
+    <div>
+      <h1>HelloWorld!</h1>
+      <h2></h2>
+    </div>
+      </header>
        
         <div class="columns">
             <div id="article">
