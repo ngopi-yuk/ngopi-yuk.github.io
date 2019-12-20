@@ -1,64 +1,30 @@
+
+html{
+    background:#0E141B;
+    color:#fcfcfc;
+    font-family:"Source Sans Pro","sans-serif";
+    box-sizing:border-box;
+    height:100%
+}
 body{
-    margin: 5% auto;
+    background:#181E25;
     width: 70%;
     font-size: 1.2rem;
     line-height: 1.8rem;
     font-family: 'lato', sans-serif;
-    color: rgb(87, 87, 87);
-}
-
-body .khusus a{
     color: white;
-    text-decoration: none;
+    margin:0 auto;
+    padding:20px 5% 60px;
 }
 
-.poo a{
-    color: white;
-}
 
-body.darkmode .section .heading:before{
-    background: white;
-}
-
-body.darkmode .khusus a{
-    background-color: #fff;
-    color: #343a40;
-     border-radius: 13px; 
-     text-decoration: none; 
-     color: inherit; line-height: 1; 
-    -webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; 
-
-}
-
-@font-face {
-        font-family: tulisan;
-        src: url(../font/Oxygen-Regular.ttf);
-}
-
-body.darkmode {
-    background-color: #15202B;
-    /*background: rgb(57, 57, 57);*/
-    color: rgb(227, 227, 227);
-}
-
-body.darkmode a{
-    color: rgb(227, 227, 227);
-}
-
-body.darkmode a:hover{
-    color: #1DA1F2;
-}
-
-body.darkmode a.act:link{
-    color: #1DA1F2;
-}
 
 .is-hidden{
     display: none;
 }
 
 a{
-    color: rgb(87, 87, 87);
+    color: white;
 }
 
 
@@ -117,7 +83,7 @@ blockquote {
 
     .list{
         position: relative;
-        left: 100px;
+        
         top: -25px;
         display: inline-flex;
     }
